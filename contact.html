@@ -7,27 +7,18 @@
     <meta name="author" content="" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <title>Emilite,Emina Versi Lite</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+    <title>Contact Us</title>
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
-
     <link rel="stylesheet" href="assets/css/templatemo-hexashop.css" />
-
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
-    <link rel="stylesheet" href="assets/css/loader.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
     <link href="assets/images/logo-eminachh.png" rel="icon" />
-    <!--
-
-TemplateMo 571 Hexashop
-
-https://templatemo.com/tm-571-hexashop
-
--->
   </head>
 
   <body>
@@ -47,42 +38,31 @@ https://templatemo.com/tm-571-hexashop
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li class="scroll-to-section">
-                  <a href="home.php">Home</a>
+                  <a href="home.html">Home</a>
                 </li>
                 <li class="submenu">
                   <a href="javascript:;">Shop</a>
                   <ul>
-                    <li><a href="makeup.php">Make Up</a></li>
-                    <li><a href="skincare.php">Skincare</a></li>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
                   </ul>
                 </li>
-                <li class="scroll-to-section"><a href="voucher.php" class="active">Contat Us</a></li>
+                <li class="scroll-to-section"><a href="contact.html" class="active">Contat Us</a></li>
                 <li class="submenu">
                   <a href="javascript:;">Explore</a>
                   <ul>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="faq.php">FAQ</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                   </ul>
                 </li>
-                <?php if (isset($_SESSION['username'])): ?>
                   <li class="scroll-to-section">
-                    <a href="index.php?action=logout">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                      <span>
-                        Logout
-                      </span>
-                    </a>
-                  </li>
-                <?php else: ?>
-                  <li class="scroll-to-section">
-                    <a href="login.php">
+                    <a href="login.html">
                       <i class="fa fa-user" aria-hidden="true"></i>
                       <span>
                         Login
                       </span>
                     </a>
                   </li>
-                <?php endif ?>
               </ul>
               <a class="menu-trigger">
                 <span>Menu</span>
@@ -101,7 +81,7 @@ https://templatemo.com/tm-571-hexashop
     </section>
     <!-- ***** Banner Voucher Area End ***** -->
 
-    <!-- ***** Contact Area End ***** -->
+    <!-- ***** Contact Area Start ***** -->
         <section id="contact">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-lg-offset-2 m">
@@ -161,25 +141,12 @@ https://templatemo.com/tm-571-hexashop
                         </div>
                     </form>
                     </form>
-            <?php 
-            if(isset($_POST['ok'])){
-                include_once 'function.php';
-                $obj=new Contact();
-                $res=$obj->contactus($_POST);
-                if($res==true){
-                    echo "<script>alert('Query successfully Submitted.Thank you')</script>";
-                }else{
-                    echo "<script>alert('Query successfully Submitted.Thank you')</script>";
-                }
-            }
-            ?>
-                </div><!-- /.8 -->
+                </div>
+            </div> 
+        </section> 
+    <!-- ***** Contact Area End ***** -->
 
-            </div> <!-- /.row-->
-
-        </section> <!-- /.container-->
-
-    <!-- ***** Footer Start ***** -->
+    <!-- ***** Footer Area Start ***** -->
     <footer>
       <div class="container">
         <div class="row">
@@ -198,9 +165,8 @@ https://templatemo.com/tm-571-hexashop
             <div class="foot1">
               <h4>Emina's Category</h4>
               <ul>
-                <li><a href="makeup.php">Make Up</a></li>
-                <li><a href="skincare.php">Skincare</a></li>
-                <li><a href="voucher.php">Voucher</a></li>
+                <li><a href="makeup.html">Make Up</a></li>
+                <li><a href="skincare.html">Skincare</a></li>
               </ul>
             </div>
           </div>
@@ -208,9 +174,9 @@ https://templatemo.com/tm-571-hexashop
             <div class="foot2">
               <h4>Useful Link</h4>
               <ul>
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
-                <li><a href="faq.php">FAQ</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
               </ul>
             </div>
           </div>
@@ -222,6 +188,7 @@ https://templatemo.com/tm-571-hexashop
         </div>
       </div>
     </footer>
+    <!-- ***** Footer Area End ***** -->
 
     <!-- Loading Screen -->
     <div class="loading-screen animate_animated animate_fadeInUp">

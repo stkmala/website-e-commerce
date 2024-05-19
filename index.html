@@ -1,7 +1,3 @@
-<?php 
-  session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,32 +7,21 @@
     <meta name="author" content="" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <title>Emilite,Emina Versi Lite</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
+    <title>Emina Cosmetics</title>
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
-
     <link rel="stylesheet" href="assets/css/templatemo-hexashop.css" />
-
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
-    <link rel="stylesheet" href="assets/css/loader.css" />
     <link rel="stylesheet" href="assets/css/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
     <link href="assets/images/logo-eminachh.png" rel="icon" />
-    <!--
-
-TemplateMo 571 Hexashop
-
-https://templatemo.com/tm-571-hexashop
-
--->
   </head>
 
   <body>
-
-
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky">
       <div class="container">
@@ -44,49 +29,38 @@ https://templatemo.com/tm-571-hexashop
           <div class="col-12">
             <nav class="main-nav">
               <!-- ***** Logo Start ***** -->
-              <a href="index.php" class="logo">
+              <a href="index.html" class="logo">
                 <img src="assets/images/logo emina.png" />
               </a>
               <!-- ***** Logo End ***** -->
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li class="scroll-to-section">
-                  <a href="home.php">Home</a>
+                  <a href="home.html" class="active">Home</a>
                 </li>
                 <li class="submenu">
                   <a href="javascript:;">Shop</a>
                   <ul>
-                    <li><a href="makeup.php">Make Up</a></li>
-                    <li><a href="skincare.php">Skincare</a></li>
+                    <li><a href="makeup.html">Make Up</a></li>
+                    <li><a href="skincare.html">Skincare</a></li>
                   </ul>
                 </li>
-                <li class="scroll-to-section"><a href="voucher.php" class="active">Voucher</a></li>
+                <li class="scroll-to-section">
+                  <a href="contact.html">Contact Us</a>
+                </li>
                 <li class="submenu">
                   <a href="javascript:;">Explore</a>
                   <ul>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="faq.php">FAQ</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                   </ul>
                 </li>
-                <?php if (isset($_SESSION['username'])): ?>
-                  <li class="scroll-to-section">
-                    <a href="index.php?action=logout">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                      <span>
-                        Logout
-                      </span>
-                    </a>
-                  </li>
-                <?php else: ?>
-                  <li class="scroll-to-section">
-                    <a href="login.php">
-                      <i class="fa fa-user" aria-hidden="true"></i>
-                      <span>
-                        Login
-                      </span>
-                    </a>
-                  </li>
-                <?php endif ?>
+                <li class="scroll-to-section">
+                  <a href="login.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span> Login </span>
+                  </a>
+                </li>
               </ul>
               <a class="menu-trigger">
                 <span>Menu</span>
@@ -98,32 +72,71 @@ https://templatemo.com/tm-571-hexashop
       </div>
     </header>
     <!-- ***** Header Area End ***** -->
-    <!-- ***** Banner Voucher Area Start ***** -->
-    <section id="voucher-banner">
-      <img src="assets/images/bnrvouc.jpg" />
-    </section>
-    <!-- ***** Banner Voucher Area End ***** -->
 
-    <!-- ***** Products Area Starts ***** -->
-    <div class="container">
-      <div id="voucher">
-        <div class="voc" data-name="15k">
-          <img src="assets/images/voucher 15k.jpg" />
-          <a class="voc-btn" href="login.php">get now!</a>
+    <!-- ***** Main Banner Area Start ***** -->
+    <section class="main-banner">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="assets/images/eminaa.png" />
+          <img id="slide-2" src="assets/images/eminaa 2.jpg" />
+          <img id="slide-3" src="assets/images/eminaa 3.jpg" />
         </div>
-        <div class="voc" data-name="25k">
-          <img src="assets/images/voucher 25k.jpg" />
-          <a class="voc-btn" href="login.php">get now!</a>
-        </div>
-        <div class="voc" data-name="50k">
-          <img src="assets/images/voucher 50k.jpg" />
-          <a class="voc-btn" href="login.php">get now!</a>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
         </div>
       </div>
-    </div>
-    <!-- ***** Products Area Ends ***** -->
+    </section>
+    <!-- ***** Main Banner Area End ***** -->
 
-    <!-- ***** Footer Start ***** -->
+    <!-- ***** BestPicks Area Start ***** -->
+    <section class="products">
+      <h2>Hottiest <span>Picks!</span></h2>
+      <h5>Check it out our hottiest picks</h5>
+      <hr />
+      <div class="all-products">
+        <div class="product">
+          <img src="assets/images/bbcream.png" />
+          <div class="product-info">
+            <h4 class="product-title">Daily Matte BB Cream</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/bs-face-wash.png" />
+          <div class="product-info">
+            <h4 class="product-title">Bright Stuff Face Wash</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/compact-powder1.png" />
+          <div class="product-info">
+            <h4 class="product-title">Daily Matte Compact Powder</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/bsloose.png" />
+          <div class="product-info">
+            <h4 class="product-title">Bright Stuff Loose Powder</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/sunbat45.png" />
+          <div class="product-info">
+            <h4 class="product-title">Sun Battle Spf 45 PA+++</h4>
+          </div>
+        </div>
+        <div class="product">
+          <img src="assets/images/toner.png" />
+          <div class="product-info">
+            <h4 class="product-title">Bright Stuff Toner</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** BestPicks Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
     <footer>
       <div class="container">
         <div class="row">
@@ -142,9 +155,8 @@ https://templatemo.com/tm-571-hexashop
             <div class="foot1">
               <h4>Emina's Category</h4>
               <ul>
-                <li><a href="makeup.php">Make Up</a></li>
-                <li><a href="skincare.php">Skincare</a></li>
-                <li><a href="voucher.php">Voucher</a></li>
+                <li><a href="makeup.html">Make Up</a></li>
+                <li><a href="skincare.html">Skincare</a></li>
               </ul>
             </div>
           </div>
@@ -152,9 +164,9 @@ https://templatemo.com/tm-571-hexashop
             <div class="foot2">
               <h4>Useful Link</h4>
               <ul>
-                <li><a href="about.php">About Us</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
-                <li><a href="faq.php">FAQ</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
               </ul>
             </div>
           </div>
@@ -166,11 +178,13 @@ https://templatemo.com/tm-571-hexashop
         </div>
       </div>
     </footer>
+    <!-- ***** Footer Area End ***** -->
 
     <!-- Loading Screen -->
     <div class="loading-screen animate_animated animate_fadeInUp">
       <div class="loader"></div>
-      <h1>Born to be loved</h1> 
+      <h1>Born to be loved</h1>
+          
     </div>
 
     <!-- jQuery -->
@@ -191,6 +205,7 @@ https://templatemo.com/tm-571-hexashop
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/filter.js"></script>
     <script src="assets/js/loader.js"></script>
 
     <!-- Global Init -->
