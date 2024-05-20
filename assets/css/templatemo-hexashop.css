@@ -768,6 +768,12 @@ banner home
   size: 500cm;
 }
 
+@media (max-width: 900px) {
+  .main-banner .slider-wrapper .slider img {
+    width: 100vw;
+  }
+}
+
 .products {
   margin-bottom: 30px;
 }
@@ -873,7 +879,7 @@ FaQ SkinCare
 }
 
 #Faq-banner img {
-  width: 100%;
+  width: 100vw;
   margin-right: 0px;
 }
 
@@ -1266,6 +1272,7 @@ filter makeup dan skincare
     width: calc(100% / 2 - 10px);
   }
 }
+
 
 #voucher-banner {
   margin-top: 80px;
