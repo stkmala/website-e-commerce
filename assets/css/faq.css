@@ -8,9 +8,9 @@ body {
 .containerFluid {
   width: 40%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .containerFluid h2 {
@@ -34,7 +34,7 @@ body {
 }
 
 .accordion {
-  width: 1000px;
+  width: 800px;
   padding: 0;
   border: 2px solid #6db5ff;
   cursor: pointer;
@@ -83,5 +83,66 @@ body {
   overflow: hidden;
   max-height: 0;
   transition: all 0.3s ease-in;
-  width: 980px;
+  width: 780px;
+}
+
+@media (max-width: 1000px) {
+  .containerFluid {
+    padding: 30px;
+    margin-bottom: 100px;
+  }
+
+  .containerFluid .accordion {
+    width: 600px;
+  }
+
+  .containerFluid .accordion .icon{
+    width: 30px;
+    height: 30px;
+  }
+
+  .containerFluid .panel {
+    width: 600px;
+    height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .containerFluid {
+    margin: 30px auto 30px 30px;
+  }
+
+  .containerFluid .accordion {
+    width: 400px;
+  }
+
+  .containerFluid .accordion .icon{
+    width: 30px;
+    height: 30px;
+  }
+
+  .containerFluid .panel {
+    width: 400px;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .containerFluid {
+    margin: 30px auto 30px 30px;
+  }
+
+  .containerFluid .accordion {
+    width: 250px;
+    padding: 4px;
+  }
+
+  .containerFluid .accordion .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .containerFluid .panel {
+    width: 230px;
+    height: auto;
+  }
 }
